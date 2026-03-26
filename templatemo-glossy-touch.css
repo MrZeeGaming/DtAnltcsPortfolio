@@ -477,6 +477,28 @@ button[type="submit"] {
     left: 0;
     color: rgba(255, 255, 255, 0.9);
 }
+
+.home-bullet{
+    list-style: none;
+    
+}
+
+
+.home-bullet li{
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 120%;
+}
+
+.home-bullet li:before{
+    content: "●";
+    position: absolute;
+    left: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 /* Contact page styles */
 .contact-grid {
     display: grid;
