@@ -142,3 +142,19 @@ let currentPage = 'home';
             }
         `;
         document.head.appendChild(fadeStyle);
+
+const clickableImages = document.querySelectorAll('.clickable');
+const overlay = document.getElementById('overlay');
+const enlargedImage = document.getElementById('enlargedImage');
+
+clickableImages.forEach(img => {
+  img.addEventListener('click', () => {
+    enlargedImage.src = img.src;
+    overlay.style.display = 'flex';
+  });
+});
+
+overlay.addEventListener('click', () => {
+  overlay.style.display = 'none';
+  enlargedImage.src = '';
+});
